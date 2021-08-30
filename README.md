@@ -57,8 +57,13 @@ This function applies the following transformations to the images and the object
 
 # Training
 
-Before you begin, make sure to save the required data files for training and evaluation. To do this, run the contents of [`create_data_lists.py`].
+Before you begin, make sure to save the required data files for training and evaluation. To do this, run the contents of [`create_data_lists.py`]. Make sure to give your dataset path for train and test set as shown below. Also you need too give output path for json representation of your dataset to use while training. You can change these 3 paths according to your data path.
 
+`create_data_lists(train_data_path='chess_dataset/train',
+                      test_data_path='chess_dataset/test',
+                      output_folder='json_outputs')`
+                      
+Before training, you have to give json_outputs' path in train.py as data_folder. 
 
 To **train your model from scratch**, run this file –
 
